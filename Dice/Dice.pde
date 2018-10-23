@@ -15,6 +15,8 @@ int green = #23E317;
 int yellow = #F9FA05;
 int purple = #E329B8;
 int red = #E31717; //end of colors
+
+
 void setup() {
   size(1000, 800);
   //no loop means that draw is only called once
@@ -38,6 +40,7 @@ void setup() {
   } //end of counter setup
   noLoop();
 }
+
 
 void draw() {
   background(100);
@@ -90,8 +93,8 @@ class Die { //beginning of class Die
 
   void roll() { //selects a random number between 0-6
     dieRoll = (int)random(1, 7); 
-    System.out.println(dieRoll);
   }
+
 
   void show() {
     pushMatrix(); 
