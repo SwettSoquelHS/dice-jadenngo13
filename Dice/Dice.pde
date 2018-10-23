@@ -62,12 +62,14 @@ void draw() {
   }
 }
 
+
 void mousePressed() {
   //calling redraw will do the necessary work 
   //to redraw your processing script
   sum+=9; //everytime the mouse is clicked, the total roll counter goes up 6
   redraw();
 }
+
 
 void keyPressed() { //when a key is pressed, the total count of the die rolls are reset
   for (int i = 0; i<counter.length; i++) {
@@ -184,6 +186,7 @@ class Total { //beginning of class Total
     text(s, x_pos, y_pos+360); //for current counter
     text(currCounter[i], x_pos+50, y_pos+360);
   } //end of show function
+
 
   void graph(int i) {
     if (i==0) {
